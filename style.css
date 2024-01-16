@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Tilt+Neon&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Tilt Neon", sans-serif;
+}
+
+.maiContainer {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+}
+
+.leftContainer {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(209, 220, 231);
+  gap: 1.25rem;
+}
+
+.text-color {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+textarea {
+  box-shadow: 4px 4px 10px 0px #803636;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.color {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  margin-top: 1.25rem;
+  width: 90%;
+}
+
+.btn button {
+  color: #fff;
+  width: 10rem;
+  height: 3rem;
+  text-align: center;
+  border-radius: 3rem;
+  border: none;
+  cursor: pointer;
+  background-image: linear-gradient(
+    to right,
+    #ed6ea0,
+    #ec8c69,
+    #f7186a,
+    #fbb03b
+  );
+  box-shadow: 0 4px 15px 0 rgba(236, 116, 149, 0.75);
+}
+.btn button:hover {
+  background-image: linear-gradient(
+    to left,
+    #ed6ea0,
+    #ec8c69,
+    #f7186a,
+    #fbb03b
+  );
+}
+
+.rightContainer {
+  width: 50%;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.rightContainer h1 {
+  width: 100%;
+  text-align: center;
+}
+
+.note {
+  margin-bottom: 10px;
+  min-width: 10rem;
+  max-width: 15rem;
+  word-wrap: break-word;
+  justify-content: space-between;
+  padding: 0.5rem;
+  position: relative;
+  border: 1px solid #ccc;
+}
+
+.clsBtn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #000;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.empty-msg {
+  width: 100%;
+  height: fit-content;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25%;
+}
+
+.sticky-notes {
+  margin-top: 3rem;
+  margin-left: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  justify-content: start;
+  align-items: start;
+}
+
+.clsBtn {
+  cursor: pointer;
+  position: absolute;
+  top: -0.85rem;
+  right: -0.85rem;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+}
+
+#deleteAll {
+  background-color: white;
+  text-align: center;
+  margin-top: 25%;
+  /* display: none; */
+}

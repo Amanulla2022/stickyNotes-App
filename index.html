@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sticky Notes</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="maiContainer">
+      <div class="leftContainer">
+        <div class="text-color animate__bounceIn">
+          <textarea
+            class="note-input"
+            type="text"
+            cols="75"
+            rows="10"
+            placeholder="// Write a note here"
+          ></textarea>
+          <div class="color">
+            <input type="color" value="#90EE90" />
+          </div>
+        </div>
+        <div class="btn animate__bounceIn">
+          <button id="addNoteBtn">Add Note</button>
+          <button id="deleteAllBtn">Delet All</button>
+        </div>
+      </div>
+      <div class="rightContainer">
+        <h1>Your Notes</h1>
+        <div class="sticky-notes"></div>
+        <p class="empty-msg">You have not added a note yet.</p>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
